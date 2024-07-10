@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Bad+Script);
+
+/*Variables*/
+:root{
+    --font-family: "Roboto", sans-serif;
+    --nomrmal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: white;
+    --primary-color: #e5d8c8;
+    --secondary-color: #fff;
+    --primary-shadow: white;
+    --secondary-shadow: #fff;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+}
+/*Fin de las variables*/
+
+*{
+    padding: 0.5; 
+    margin: 0.5; 
+    box-sizing: border-box;
+}
+/*estilos para el body*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #530000;
+    font-family: 'Bad Script', cursive;
+    -webkit-font-smoothing: antialiased;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+  h3{
+    margin-bottom: var(--bottom-margin);
+    color:#fff;
+    align-items: center;
+    font-family: 'Bad Script', cursive;
+    -webkit-font-smoothing: antialiased;
+  }
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover{
+    color: var(--secondary-color);
+}
+
+nav{
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: #530000;
+    box-shadow: 0 3px 5px #fff;
+}
+
+nav a{
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #f1c4ff;
+    border-bottom: 2px solid #f1c4ff;
+}
+
+nav ul{
+    display: flex;
+    gap: 1.9rem;
+}
+
+nav ul li{
+    font-weight: bold;
+}
+
+.burger-menu{
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+    
+}
+
+/*Fin de NavBar*/
+
+/*Hero Section*/
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+}
+
+.hero img{
+    height: 27.5rem;
+    width: 27.5rem;
+}
+
+.bio{
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow); 
+    color:#fff;
+}
+
+.bio h1{
+    margin-bottom: var(--bottom-margin);
+    color:#fff;
+}
+
+.bio p{
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+    color:#fff;
+}
+
+/*More about*/
+.more-about{
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+}
+
+.more-about h1{
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+    color:#530000;
+}
+
+.more-about p{
+    line-height: var(--line-height);
+    padding: 0.4rem;
+}
+
+
+/*skill section*/
+.skills{
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+    color:#fff;
+}
+
+.skill-header{
+    margin-bottom: 1rem;
+}
+
+.skills-wrapper video,
+.icon {
+  width: 15.875rem; /* Adjust width if needed */
+  height: 15.875rem; /* Make videos square */
+  border-style: groove;
+  border-color: white;
+  border-radius: 5rem;
+}
+
+.icon{
+    width: 11.875rem;
+    height: 11.25rem;
+}
+
+.icon-card{
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+}
+
+.oaxaca{
+    float: left;
+    padding: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 25rem;
+    width: 25rem;
+    float: left;
+    margin-top: -10px;
+    border-radius: 10rem;
+    border-style: groove;
+    border-color: #530000;
+}
+
+h1{
+    padding: auto;
+    margin: 1%;
+    font-style:italic;
+    font-variant:small-caps;
+    font-family: 'Bad Script', cursive;
+    -webkit-font-smoothing: antialiased;
+    font-size:220%;
+    direction: center;
+    text-align:center;
+    color:#fff;
+}
+.yo{
+    float: right;
+    padding: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 9rem;
+    width: 9rem;
+    float: right;
+    margin-top: -630px;
+    border-radius: 60rem;
+    border-style: groove;
+    border-color: #530000;
+}
+
+.you{
+    float: left;
+    padding: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 18rem;
+    width: 18rem;
+    float: left;
+    margin-top: 40px;
+    border-radius: 60rem;
+    border-style: groove;
+    border-color: #530000;
+}
+.hr{
+    padding: 0.3rem 0;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    font-size:180%;
+    text-align:justify;
+    color:#fff;
+}
+
+p{
+    line-height: var(--line-height);
+    font-style:italic;
+    font-variant:small-caps;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:18;
+    padding: 0.3rem 0;
+    color:#fff;
+}
+
+.nov{ 
+    padding: 0.3rem 0;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    font-size:180%;
+    text-align:justify;
+    color:#530000;  
+    }
+
+    .novi{
+        padding: 0.3rem 0;
+        font-style: italic;
+        font-family:'Times New Roman', Times, serif;
+        font-size:180%;
+        text-align:justify;
+        color:#530000;  
+    }
+
+.forane{
+    padding: 0.3rem 0;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    font-size:180%;
+    text-align:justify;
+    color:#530000;   
+}
+
+.ily{
+    padding: 0.3rem 0;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    font-size:180%;
+    text-align:justify;
+    color:#530000;
+}
+
+.projects{
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 3rem;
+}
+
+.project-pic{
+    width: 65%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.projects-container{
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards to multiple lines if needed */
+      justify-content: space-around; /* Distribute cards evenly */
+      margin: 0 auto; 
+}
+
+.projects-title{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-container{
+    text-align: center;
+    width: 21rem;
+    padding: 1rem;
+    margin: 1rem; /* Add margin for spacing between cards */
+    background-color: #bb6565;
+    border-radius: 31px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+}
+
+.project-title{
+    margin-bottom: var(--bottom-margin);
+}
+
+.project-details{
+    margin-bottom: var(--bottom-margin);
+ }
+
+.project-card{
+    background-color: #bb6565;
+    border-radius: 31px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    
+}
+
+.tu{
+text-align: center;
+margin-bottom: 2rem;
+color: white;
+}
+
+.det{
+    font-family: 'Bad Script', cursive;
+	-webkit-font-smoothing: antialiased;
+    color:whitesmoke;
+	text-shadow: 0px 1px 1px hsla(0,0%,100%,1);
+	font-size: 1.8em;
+	line-height:1.45em;
+	margin: 30px 50px 0 50px;
+}
+
+.mio{
+        font-family: 'Bad Script', cursive;
+        -webkit-font-smoothing: antialiased;
+        color:whitesmoke;
+        text-shadow: 0px 1px 1px hsla(0,0%,100%,1);
+        font-size: 1.8em;
+        line-height:1.45em;
+        margin: 30px 50px 0 50px;
+    }
+
+    .eli{
+    
+        font-family: 'Bad Script', cursive;
+        -webkit-font-smoothing: antialiased;
+        color:whitesmoke;
+        text-shadow: 0px 1px 1px hsla(0,0%,100%,1);
+        font-size: 1.8em;
+        line-height:1.45em;
+        margin: 30px 50px 0 50px;
+    }
+
+.mom{
+    font-family: 'Bad Script', cursive;
+    -webkit-font-smoothing: antialiased;
+    color:black;
+    text-shadow: 0px 1px 1px rgb(15, 15, 15);
+    font-size: 1.8em;
+    line-height:1.45em;
+    margin: 30px 50px 0 50px;
+}
+
+.momi{
+    font-family: 'Bad Script', cursive;
+    -webkit-font-smoothing: antialiased;
+    color:white;
+    text-shadow: 0px 1px 1px rgb(15, 15, 15);
+    font-size: 1.8em;
+    line-height:1.45em;
+    margin: 30px 50px 0 50px;
+}
+
+.title{
+    font-style:italic;
+    font-variant:small-caps;
+    font-family: 'Bad Script', cursive;
+    -webkit-font-smoothing: antialiased;
+    font-size:18;
+    padding: 0.3rem 0;
+    color:#fff;
+    text-align: center;
+}
